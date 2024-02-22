@@ -12,6 +12,7 @@ const { protocol, hostname, port, pathname } = new URL(
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
+    domains: ['adoctor.org','secure.gravatar.com'],
     remotePatterns: [
       {
         protocol: protocol.slice(0, -1),
